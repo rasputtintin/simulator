@@ -1,0 +1,32 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - '@mojaloop/central-services-shared > lodash':
+        patched: '2020-04-30T23:37:56.812Z'
+    - '@mojaloop/central-services-shared > @mojaloop/event-sdk > lodash':
+        patched: '2020-04-30T23:37:56.812Z'
+    - '@mojaloop/central-services-logger > winston > async > lodash':
+        patched: '2020-04-30T23:37:56.812Z'
+    - hapi-good-winston > winston > async > lodash:
+        patched: '2020-04-30T23:37:56.812Z'
+    - '@mojaloop/central-services-shared > @mojaloop/central-services-stream > @mojaloop/central-services-error-handling > lodash':
+        patched: '2020-04-30T23:37:56.812Z'
+    - '@mojaloop/central-services-error-handling > @mojaloop/sdk-standard-components > request-promise-native > request-promise-core > lodash':
+        patched: '2020-04-30T23:37:56.812Z'
+    - '@mojaloop/central-services-shared > @mojaloop/central-services-logger > winston > async > lodash':
+        patched: '2020-04-30T23:37:56.812Z'
+    - '@mojaloop/central-services-shared > @mojaloop/event-sdk > sinon > @sinonjs/samsam > lodash':
+        patched: '2020-04-30T23:37:56.812Z'
+    - '@mojaloop/central-services-shared > @mojaloop/central-services-error-handling > @mojaloop/sdk-standard-components > request-promise-native > request-promise-core > lodash':
+        patched: '2020-04-30T23:37:56.812Z'
+    - '@mojaloop/central-services-shared > @mojaloop/central-services-stream > @mojaloop/central-services-logger > winston > async > lodash':
+        patched: '2020-04-30T23:37:56.812Z'
+    - '@mojaloop/central-services-shared > @mojaloop/event-sdk > sinon > @sinonjs/formatio > @sinonjs/samsam > lodash':
+        patched: '2020-04-30T23:37:56.812Z'
+    - '@mojaloop/central-services-shared > @mojaloop/central-services-stream > @mojaloop/central-services-error-handling > @mojaloop/sdk-standard-components > request-promise-native > request-promise-core > lodash':
+        patched: '2020-04-30T23:37:56.812Z'
+    - '@mojaloop/central-services-shared > @mojaloop/event-sdk > sinon > nise > @sinonjs/formatio > @sinonjs/samsam > lodash':
+        patched: '2020-04-30T23:37:56.812Z'
