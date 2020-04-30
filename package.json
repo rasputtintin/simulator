@@ -24,7 +24,9 @@
     "audit:resolve": "SHELL=sh resolve-audit",
     "audit:check": "SHELL=sh check-audit",
     "dep:check": "npx ncu -e 2",
-    "dep:update": "npx ncu -u"
+    "dep:update": "npx ncu -u",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "pre-commit": [
     "standard",
@@ -53,12 +55,14 @@
     "ilp-packet": "3.0.9",
     "joi-currency-code": "3.0.0",
     "node-cache": "5.1.0",
-    "prom-client": "11.5.3"
+    "prom-client": "11.5.3",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "pre-commit": "1.2.2",
     "standard": "14.3.1",
     "npm-audit-resolver": "2.1.0",
     "npm-check-updates": "4.0.1"
-  }
+  },
+  "snyk": true
 }
